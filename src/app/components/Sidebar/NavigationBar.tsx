@@ -40,8 +40,8 @@ const NavigationBar = () => {
                 ))}
             </nav>
             <nav className="hidden md:flex mb-5 justify-center">
-                <Link href="#" legacyBehavior>
-                    <a>
+                <Link href="https://github.com/gwom5/spotify-data" legacyBehavior>
+                    <a target="_blank">
                         <GithubIcon />
                     </a>
                 </Link>
