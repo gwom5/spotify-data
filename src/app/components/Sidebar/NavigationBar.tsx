@@ -5,9 +5,11 @@ import NavigationItem from "@/app/components/NavigationItem/NavigationItem";
 import SpotifyIcon from "@/lib/icons/SpotifyIcon";
 import GithubIcon from "@/lib/icons/GithubIcon";
 import {usePathname} from "next/navigation";
+import {useSession} from "next-auth/react";
 
 const NavigationBar = () => {
     const pathname = usePathname();
+    const data = useSession();
     const navigationItems = [
         { href: '/', title: 'Home', Icon: House },
         { href: '/artists', title: 'Top Artists', Icon: MicVocal },

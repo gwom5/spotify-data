@@ -16,7 +16,7 @@ const NavigationItem: React.FC<NavigationItemProps> = ({ href, title, Icon , act
                 <span className={`absolute md:left-0 md:bottom-0 top-0 md:w-1 md:h-full h-1 w-full transition-all duration-300 ease-in-out
                     ${active ? 'bg-green-500' : 'group-hover:bg-green-300'}`}></span>
                 <Icon className="w-6 h-6 my-2 text-slate-400" />
-                <span className="text-slate-400 font-semibold">{title}</span>
+                <span className="text-slate-400 font-medium">{title}</span>
             </a>
         </Link>
     );
